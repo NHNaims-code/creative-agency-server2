@@ -71,7 +71,7 @@ app.get('/', (req, res) => {
                 price:req.body.price,
                 service:req.body.service,
                 serviceIcon:req.body.serviceIcon,
-                status:'pending'
+                status:'Pending'
             };
             orderCollection.insertOne(newOrder)
             .then(result => {
